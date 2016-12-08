@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profileLayout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <!-- Profile textView to show text on the screen-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dip"
+            android:layout_gravity="center"
+            android:hint="Profile"
+            android:textSize="50dp"
+            />
+
+        <!-- edit username textfield  -->
+        <EditText
+            android:id="@+id/input_editUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:layout_gravity="center"
+            android:hint="username                                  "
+            android:inputType="textPersonName"
+            />
+
+        <!-- edit password textfield -->
+        <EditText
+            android:id="@+id/input_editPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_gravity="center"
+            android:hint="type password        "
+            android:inputType="textPassword"
+            android:layout_below="@+id/input_editUsername"
+            />
+
+        <!-- confirm password textfield -->
+        <EditText
+            android:id="@+id/input_editConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_gravity="center"
+            android:hint="re-type password     "
+            android:inputType="textPassword"
+            android:layout_below="@+id/input_editPassword"
+            />
+
+        <!-- update button -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="SAVE"
+            android:textSize="30dp"
+            android:layout_below="@+id/input_editConfirmPassword"
+            />
+
+    </LinearLayout>
+</ScrollView>

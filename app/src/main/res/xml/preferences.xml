@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/preferenceScreen">
+
+    <Preference
+    android:key="userId"
+    android:persistent="false"
+    android:selectable="false"
+        android:title="                       User Preferences"/>
+
+    <!-- Checkbox to allow user to active splash screen -->
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="splashscreen"
+        android:summary="This option if selected will allow the application to use splash screen."
+        android:title="Splash Screen" />
+
+    <!-- Checkbox to allow user to active sound when splash screen is on-->
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="splashscreenSound"
+        android:summary="This option if selected will allow the application to enable splash screen sound."
+        android:title="Splash Screen sound" />
+
+    <!-- Checkbox to allow user to active night mode-->
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="nightMode"
+        android:summary="This option if selected will allow the application to enable night mode."
+        android:title="Night mode" />
+
+    <!-- List of sounds to allow user to select sound-->
+    <ListPreference
+        android:defaultValue="Ace"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listValues"
+        android:key="soundType"
+        android:summary="Select the kind of sound for splash screen"
+        android:title="Sound" />
+
+</PreferenceScreen>

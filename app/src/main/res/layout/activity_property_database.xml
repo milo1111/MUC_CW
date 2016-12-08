@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="xml.android.milos.com.faxtons.PropertyDatabase">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ListView
+        android:id="@+id/listViewProperty"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:dividerHeight="1dp"
+        android:divider="@color/list_view_divider"
+        android:listSelector="@drawable/list_color_selector"/>
+
+    <Button
+        android:id="@+id/buttonNewFeed"
+        android:text="New Feeds"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/listViewProperty"
+        android:textSize="15sp"
+        android:layout_marginLeft="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn_navigation"/>
+
+    <Button
+        android:id="@+id/buttonDatabaseItems"
+        android:text="Database Items"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/listViewProperty"
+        android:textSize="15sp"
+        android:layout_marginRight="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_navigation" />
+
+
+</RelativeLayout>

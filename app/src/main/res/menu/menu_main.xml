@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="xml.android.milos.com.faxtons.MainActivity">
+    <item
+        android:id="@+id/action_chart"
+        android:orderInCategory="100"
+        android:title="Chart"
+        app:showAsAction="never" />
+
+    <!-- Add items to the option menu -->
+
+    <!-- Profile -->
+    <item android:id="@+id/action_profile"
+        android:title="Profile"
+        android:orderInCategory="1"/>
+
+    <!-- Performance-->
+    <item android:id="@+id/action_preferences"
+        android:title="Preferences"
+        android:orderInCategory="2"/>
+
+    <!-- About company -->
+    <item android:id="@+id/action_about"
+        android:title="About"
+        android:orderInCategory="3"/>
+
+    <!-- Log out user -->
+    <item android:id="@+id/action_logout"
+        android:title="Logout"
+        android:orderInCategory="4"/>
+
+</menu>
